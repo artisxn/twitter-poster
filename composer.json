@@ -1,0 +1,53 @@
+{
+    "name": "codicastudio/twitter-poster",
+    "description": "A noobs worthless garbage, just learning.",
+    "keywords": [
+        "worthless garabage by a noob."
+    ],
+    "homepage": "https://github.com/codicastudio/twitter-poster",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Michael J Brown",
+            "email": "codicastudiodev@gmail.com",
+            "homepage": "https://codicastudio.dev",
+            "role": "Developer"
+        }
+    ],
+    "require": {
+        "php": "^7.4.8",
+        "abraham/twitteroauth": "^1.0.0",
+        "illuminate/notifications": "^7.0",
+        "illuminate/support": "^7.0",
+        "kylewm/brevity": "^0.2.9"
+    },
+
+    "require-dev": {
+        "mockery/mockery": "^1.3.1",
+        "phpunit/phpunit": "^8.0",
+        "orchestra/testbench": "~5.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "codicastudio\\Twitter\\": "src"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "codicastudio\\Twitter\\Test\\": "tests"
+        }
+    },
+    "scripts": {
+        "test": "vendor/bin/phpunit"
+    },
+    "config": {
+        "sort-packages": true
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "codicastudio\\Twitter\\TwitterServiceProvider"
+            ]
+        }
+    }
+}
